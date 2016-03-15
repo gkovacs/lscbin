@@ -1,6 +1,6 @@
 {
   "name": "lscbin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "compile extensionless js files with lsc and give them hashbang so they can be put in bin",
   "main": "bin/lscbin",
   "dependencies": {

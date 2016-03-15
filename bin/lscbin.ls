@@ -1,7 +1,7 @@
 require! {
   fs
   glob
-  LiveScript
+  livescript
 }
 
 infiles = process.argv[2 to]
@@ -12,5 +12,5 @@ for filename in infiles
   if filename.slice(-3) != '.ls'
     continue
   outfile = filename.slice(0, -3)
-  fs.writeFileSync outfile, '#!/usr/bin/env node\n' + LiveScript.compile(fs.readFileSync(filename, 'utf-8'))
+  fs.writeFileSync outfile, '#!/usr/bin/env node\n' + livescript.compile(fs.readFileSync(filename, 'utf-8'))
   fs.chmodSync outfile, '0755'
