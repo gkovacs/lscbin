@@ -1,11 +1,11 @@
 {
   "name": "lscbin",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "compile extensionless js files with lsc and give them hashbang so they can be put in bin",
   "main": "bin/lscbin",
   "dependencies": {
     "glob": "^5.0.3",
-    "livescript": "^1.4.0"
+    "livescript-async": "^1.5.2"
   },
   "devDependencies": {},
   "bin": {

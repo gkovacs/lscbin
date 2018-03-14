@@ -1,8 +1,9 @@
 require! {
   fs
   glob
-  livescript
 }
+
+livescript = require 'livescript-async'
 
 infiles = process.argv[2 to]
 if infiles.length == 0
